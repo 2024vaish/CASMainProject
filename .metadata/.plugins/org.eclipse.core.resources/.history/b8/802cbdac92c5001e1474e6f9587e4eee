@@ -1,0 +1,45 @@
+17:04:04.314 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stfontschemef36dtype
+17:04:04.335 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctfill550ctype
+17:04:04.339 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctpatternfill7452type
+17:04:04.347 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stpatterntype7939type
+17:04:04.352 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctborderf935type
+17:04:04.357 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctborderpre497type
+17:04:04.366 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctxf97f7type
+17:04:04.372 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stnumfmtid76fbtype
+17:04:04.375 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stfontid9d63type
+17:04:04.378 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stfillida097type
+17:04:04.381 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stborderid1a80type
+17:04:04.385 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stcellstylexfid70c7type
+17:04:04.396 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctsheet4dbetype
+17:04:04.405 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctworksheet530dtype
+17:04:04.412 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctsheetformatprdef7type
+17:04:04.422 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctsheetviewsb918type
+17:04:04.425 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctsheetview0f43type
+17:04:04.435 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctsheetdimensiond310type
+17:04:04.438 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stref90a2type
+17:04:04.441 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctsheetdata8408type
+17:04:04.445 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctpagemargins5455type
+17:04:04.458 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctcols627ctype
+17:04:04.464 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle strelationshipid1e94type
+17:04:04.470 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctrowdd39type
+17:04:04.480 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctcell842btype
+17:04:04.495 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stcellrefe4e0type
+17:04:04.502 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctrsta472type
+17:04:04.508 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stcelltypebf95type
+17:04:04.568 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctnumfmtsb58btype
+17:04:04.573 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctfonts6623type
+17:04:04.581 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctfills2c6ftype
+17:04:04.586 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctborders0d66type
+17:04:04.590 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctcellxfs1322type
+17:04:04.595 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctcellstylexfsa81ftype
+17:04:04.628 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save core properties part
+17:04:04.628 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+17:04:04.750 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+17:04:04.760 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+17:04:04.766 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+17:04:04.773 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+17:04:04.774 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+17:04:04.774 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+17:04:04.777 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+17:04:04.780 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+17:04:04.782 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships

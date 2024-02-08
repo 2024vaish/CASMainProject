@@ -1,0 +1,40 @@
+11:13:13.736 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+11:13:13.762 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+11:13:13.768 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+11:13:13.774 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+11:13:13.779 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+11:13:13.783 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+11:13:13.783 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+11:13:13.787 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+11:13:13.789 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+11:13:13.790 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+11:13:13.795 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+11:13:13.798 [main] INFO  testCases.sample - Storing News Heading in the EXCEL File.
+11:14:59.013 [main] INFO  testCases.sample - All Tests have passed.
+11:16:32.629 [main] INFO  testCases.sample - *******Starting Test Case Execution**********
+11:16:37.997 [main] INFO  testCases.sample - Clickin on See All Link
+11:16:49.436 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save core properties part
+11:16:49.436 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+11:16:49.671 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+11:16:49.685 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+11:16:49.694 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+11:16:49.706 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+11:16:49.707 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+11:16:49.709 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+11:16:49.713 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+11:16:49.720 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+11:16:49.723 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+11:16:49.731 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+11:16:49.732 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+11:16:49.735 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+11:16:49.737 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+11:16:49.738 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+11:16:49.741 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+11:16:49.747 [main] INFO  testCases.sample - Storing News Heading in the EXCEL File.
+11:17:30.409 [main] INFO  testCases.sample - All Tests have passed.
+12:21:30.332 [main] INFO  testCases.Starting - All Tests have passed.
+12:22:33.741 [main] INFO  testCases.Starting - All Tests have passed.
+12:24:22.657 [main] INFO  testCases.Starting - All Tests have passed.
+12:32:27.655 [main] INFO  testCases.Starting - All Tests have passed.
+12:40:28.213 [main] INFO  testCases.Starting - All Tests have passed.
+12:42:14.035 [main] INFO  testCases.Starting - All Tests have passed.

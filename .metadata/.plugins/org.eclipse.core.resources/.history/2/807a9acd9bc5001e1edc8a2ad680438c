@@ -1,0 +1,46 @@
+package pageObjects;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+public class HomePage extends BasePage{
+	//WebDriver driver;
+	public HomePage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	By click_Profile_icon=By.id("meInitialsButton");
+	By click_name=By.id("mectrl_currentAccount_primary");
+	By click_email = By.id("mectrl_currentAccount_secondary");
+	String name;
+	String email;
+
+
+	
+	@FindBy(how=How.XPATH, using="//span[@class=\"fontSizeXLarge\"]/strong")
+	WebElement AroundCognizant;
+	
+	@FindBy(how=How.XPATH, using="//div[@id='6a300658-3c93-45bc-8746-5964a4379bbf']//a[@id='news_text_title']")
+	public List<WebElement> newsLinks;
+	
+	@FindBy(how=How.XPATH, using="//*[@id=\"6a300658-3c93-45bc-8746-5964a4379bbf\"]")
+	WebElement untill;
+	
+	@FindBy(xpath="//a//strong[text()='See all']")
+	WebElement seeAllLink;//=driver.findElement(By.xpath("//a//strong[text()='See all']"));
+	
+	public void clickLink() {
+		String a=seeAllLink.getText();
+		
+		seeAllLink.click();
+		System.out.println(a);
+	}
+	
+}

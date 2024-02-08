@@ -1,0 +1,25 @@
+package pageObjects;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class News extends BasePage {
+	public News(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+//	WebDriver driver;
+	
+	WebElement newsTitle=driver.findElement(By.xpath("//span[contains(text(),'News')]"));
+	List<WebElement> newsList=driver.findElements(By.xpath("//*[@id='news_text_title']"));
+	
+	public void testx() {
+		System.out.println(newsList.get(0));
+		
+	}
+
+}

@@ -1,0 +1,49 @@
+package testCases;
+
+import java.io.IOException;
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.*;
+
+import pageObjects.HomePage;
+import pageObjects.News;
+import pageObjects.NewsInfoPage;
+import testBase.BaseClass;
+
+public class VerifyAllNews extends BaseClass{
+	@Test
+	public void test() throws InterruptedException {
+		
+		//logger.info("*******Starting Test Case Execution**********");
+		HomePage hp= new HomePage(driver);
+		hp.clickLink();
+		//logger.info("Clickin on See All Link");
+		Thread.sleep(10);
+		//String s=driver.getTitle();
+		
+		//System.out.println("*************asdsdcvsdfdf**********"+s);
+		
+	}
+	@Test
+	public void test2() throws InterruptedException, IOException {
+		News n=new News(driver);
+		NewsInfoPage newsInfoPage;
+		n.writeToExcel();
+		
+		//logger.info("Storing News Heading in the EXCEL File.");
+		for(int i=0;i<5;i++) {
+			n.clickNewsHeader(i);
+			newsInfoPage = new NewsInfoPage(driver);
+			newsInfoPage.getNewsDetails();
+		}
+		//newsInfoPage.writeToExcel();
+		//Assert.fail();
+	}
+	
+	
+	
+	
+}

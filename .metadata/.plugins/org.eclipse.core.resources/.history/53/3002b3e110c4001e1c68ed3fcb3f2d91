@@ -1,0 +1,6 @@
+package Utilities;
+
+public class ExcelUtils {
+	File file=new File(System.getProperty("user.dir"+"\\testdata\\NewsHeaders.xlsx"))
+
+}
