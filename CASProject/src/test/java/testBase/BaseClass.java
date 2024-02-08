@@ -24,9 +24,10 @@ import pageObjects.HomePage;
 
 public class BaseClass {
 	static public WebDriver driver;
-	public Logger logger;
+	
 	public Properties p;
 	public HomePage hp;
+	public static Logger logger;
 	
 	@BeforeTest
 	@Parameters({"br"})
@@ -34,7 +35,7 @@ public class BaseClass {
 		FileReader file = new FileReader("C:\\Users\\2303838\\eclipse-workspace-selenium\\CASProject\\CASProject\\src\\test\\resources\\config.properties");
 		p= new Properties();
 		p.load(file);
-		logger=LogManager.getLogger(this.getClass());
+		 logger=LogManager.getLogger(this.getClass());
 		if(br.equals("Chrome")) {
 			driver = new ChromeDriver();
 }		else if(br.equals("edge")) {

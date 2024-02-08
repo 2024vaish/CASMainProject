@@ -12,16 +12,16 @@ import org.apache.poi.xssf.usermodel.*;
 
 public class ExcelUtils  {
 	
-	public void writeExcel(List<String>arr,int col) throws IOException {
+	public void writeExcel(String data,int r,int col) throws IOException {
 	//FileInputStream file=new FileInputStream(System.getProperty("user.dir")+"\\testdata\\NewsHeadings.xlsx");
-	FileOutputStream fo=new FileOutputStream(System.getProperty("user.dir")+"\\testdata\\NewsHeadings.xlsx");	
+	FileOutputStream fo=new FileOutputStream(System.getProperty("user.dir")+"\\testdata\\NewsHeadings1.xlsx");	
 	XSSFWorkbook wb=new XSSFWorkbook();
 	XSSFSheet sheet=wb.createSheet();
-	int count=arr.size();
-	for(int i=0;i<count;i++) {
-	XSSFRow row=sheet.createRow(i);
-	row.createCell(col).setCellValue(arr.get(i));
-	}
+	//int count=arr.size();
+	//for(int i=0;i<count;i++) {
+	XSSFRow row=sheet.createRow(r);
+	row.createCell(col).setCellValue(data);
+	
 	
 	wb.write(fo);
 	wb.close();

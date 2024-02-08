@@ -17,10 +17,11 @@ public class VerifyAllNews extends BaseClass{
 	@Test
 	public void test() throws InterruptedException {
 		
-		//logger.info("*******Starting Test Case Execution**********");
+		logger.info("*******Starting Test Case Execution**********");
 		HomePage hp= new HomePage(driver);
-		hp.clickLink();
-		//logger.info("Clickin on See All Link");
+		//hp.clickLink();
+		hp.sample();
+		logger.info("Clickin on See All Link");
 		Thread.sleep(10);
 		//String s=driver.getTitle();
 		
@@ -33,11 +34,11 @@ public class VerifyAllNews extends BaseClass{
 		NewsInfoPage newsInfoPage;
 		n.writeToExcel();
 		
-		//logger.info("Storing News Heading in the EXCEL File.");
+		logger.info("Storing News Heading in the EXCEL File.");
 		for(int i=0;i<5;i++) {
 			n.clickNewsHeader(i);
 			newsInfoPage = new NewsInfoPage(driver);
-			newsInfoPage.getNewsDetails();
+			newsInfoPage.getNewsDetails(i);
 		}
 		//newsInfoPage.writeToExcel();
 		//Assert.fail();
