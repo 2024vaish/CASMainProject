@@ -31,16 +31,13 @@ public class NewsInfoPage extends BasePage{
 		String titleText=title.getText();
 		titles.add(titleText);
 		arr.add(infoText);
+		eu.writeExcel("NewsHeadings", titleText, r, 0);
+		eu.writeExcel("NewsHeadings1", infoText, r, 1);
 		//js.executeScript("document.body.style.zoom='0.5'");
 		Thread .sleep(5000);
 		driver.navigate().back();
 		Thread.sleep(5000);
 	}
-
-		
-
-	
-
 	
 	public void writeToExcel() throws IOException {
 		System.out.print(titles.size());

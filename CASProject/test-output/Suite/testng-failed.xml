@@ -10,6 +10,8 @@
       <class name="testCases.VerifyAllNews">
         <methods>
           <include name="teardown"/>
+          <include name="verifySeeAllLink"/>
+          <include name="verifyNewsHeaders"/>
           <include name="verifyEachNews"/>
           <include name="setup"/>
         </methods>
@@ -18,9 +20,20 @@
         <methods>
           <include name="teardown"/>
           <include name="verifyDetails"/>
+          <include name="clickProfile"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.VerifyUserDetails -->
+      <class name="testCases.VerifyAroundCognizant">
+        <methods>
+          <include name="teardown"/>
+          <include name="scroll"/>
+          <include name="verifyTooltipAndHeader"/>
+          <include name="verifyNewsDisplayed"/>
+          <include name="setup"/>
+          <include name="verifyAroundCognizantPresent"/>
+        </methods>
+      </class> <!-- testCases.VerifyAroundCognizant -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
