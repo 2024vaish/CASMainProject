@@ -1,5 +1,6 @@
 package pageObjects;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,8 +17,10 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import Utilities.ExcelUtils;
+
 public class HomePage extends BasePage{
-	//WebDriver driver;
+	ExcelUtils eu=new ExcelUtils();
 	public HomePage(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
@@ -51,17 +54,9 @@ public class HomePage extends BasePage{
 		newsLinks=driver.findElements(By.xpath("//div[@id='6a300658-3c93-45bc-8746-5964a4379bbf']//a[@id='news_text_title']"));
 		
 	}
-	public void scroll(WebElement ele) {
-		JavascriptExecutor jse=(JavascriptExecutor) driver;
-		jse.executeScript("arguments[0].scrollIntoView();", ele);
-	}
- 	
-	 public void hoverOverElement(WebElement ele) {
-		Actions act=new Actions(driver);
-		act.moveToElement(ele).perform();
-		 
-	 }
 	
+ 	
+	 
 	public void clickProfileIcon() {
 		hoverOverElement(btn);
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -88,19 +83,20 @@ public class HomePage extends BasePage{
 	
 	public int headerVisible() {
 		int count=newsLinks.size();	
-		
-	    return count;
-	    
-	     
+	    return count;  
 	}
 
-	public List<String> headerText() {
+	public List<String> headerText() throws IOException {
 		this.getNewsLinks();
 		System.out.println("Home Page NewsLinks Count :"+newsLinks.size());
+		int i=0;
 		for(WebElement ele:newsLinks) {
-			text.add(ele.getText());
+			String s=ele.getText();
+			text.add(s);
+			i++;	
 		}
 		System.out.println("Home Page News Count :"+text.size());
+		eu.writeExcel("NewsHeading", text);
 		return text; 
 	}
 	
@@ -109,8 +105,10 @@ public class HomePage extends BasePage{
 	
 		String headertext;
 		boolean flag=false;
-		for(int i=0;i<newsLinks.size();i++) {
-		WebElement link=newsLinks.get(i);
+		for(WebElement link:newsLinks) {
+		
+		scroll(link);
+		hoverOverElement(link);
 		headertext=link.getText();
 		String tooltipText=link.getAttribute("title");
 		flag=tooltipText.equals(headertext);
@@ -122,62 +120,15 @@ public class HomePage extends BasePage{
 
 	 public void clickSeeAllLink(){
 		scroll(seeAllLink);
-		js.executeScript("arguments[0].scrollIntoView();", seeAllLink);
+		//js.executeScript("arguments[0].scrollIntoView();", seeAllLink);
 		hoverOverElement(seeAllLink);
 		seeAllLink.click();
  		
 		
 }
-
-
-	
-	
-/*
-
-	public void sample() throws InterruptedException {
-		List<WebElement> el=driver.findElements(By.xpath("//div[@id='6a300658-3c93-45bc-8746-5964a4379bbf']//a[@id='news_text_title']"));
-		   String[] data=new String[6];
-		   int i=0;
-		   for(WebElement e:el) {
-			   data[i]=e.getText();
-			   i++;
-			   System.out.println(e.getText());
-		   }
-		 //  WebElement element=driver.findElement(By.xpath("//*[@class=\"fontSizeMedium\"]/strong"));
-		  
-		   Thread.sleep(2000);	          
-       // seeAllLink.click();
-        Thread.sleep(5000);	       
-        List<WebElement> list2=driver.findElements(By.xpath("//a[starts-with(@class,'k_a_91bed31b text_title')]"));
-        String[] data1=new String[8];
-        int i1=0;
-        System.out.println(list2.size());
-        for(WebElement e : list2) {
-     	   js.executeScript("arguments[0].scrollIntoView();",e);
-     	   data1[i1]=e.getText();
-     	   i1++;
-     	   Thread.sleep(2000);
-     	   System.out.println(e.getText());
-   }
-        try {
-        for(int i2=0;i2<=7;i2++) {
-     	   if(data1[i2].equalsIgnoreCase(data[i2])) {
-     		   System.out.println("pass");
-     	   }
-     	   else {
-     		   System.out.println("fail");
-     	   }
-        }
-        }
-        catch(ArrayIndexOutOfBoundsException e) {
-     	   
-        }
-	}
-	public void clickLink() {
-		String a=seeAllLink.getText();
-		
-		seeAllLink.click();
-		System.out.println(a);
-	}
-	*/
 }
+
+
+	
+	
+

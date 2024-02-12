@@ -16,5 +16,14 @@ public class BasePage {
  		
  	}
  	 
- 	
+ 	public void scroll(WebElement ele) {
+		JavascriptExecutor jse=(JavascriptExecutor) driver;
+		jse.executeScript("arguments[0].scrollIntoView();", ele);
+	}
+ 	public void hoverOverElement(WebElement ele) {
+		Actions act=new Actions(driver);
+		act.moveToElement(ele).perform();
+		 
+	 }
+	
 }

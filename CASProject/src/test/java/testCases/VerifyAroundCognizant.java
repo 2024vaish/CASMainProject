@@ -1,6 +1,8 @@
 package testCases;
 
 import static org.testng.Assert.assertEquals;
+
+import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +18,7 @@ import pageObjects.PageObject;
 import testBase.BaseClass;
 
 public class VerifyAroundCognizant extends BaseClass {
-	
+	HomePage hp;
 	
 	@Test(priority=1)
 	void scroll() {
@@ -26,34 +28,30 @@ public class VerifyAroundCognizant extends BaseClass {
 	}
 	
 	@Test(priority=2)
-	void testcontent()
+	void verifyAroundCognizantPresent()
 	{
-		HomePage hp=new HomePage(driver);
+		logger.info("Verifying AroundCognizant is displayed or not.");
+		hp=new HomePage(driver);
 		boolean text=hp.checkTextPresence();
 		Assert.assertEquals(text, true,"Around cognizant is not displayed");
 		
 	}
 	
 	@Test(priority=3)
-	void news() {
-		HomePage hp=new HomePage(driver);
-		hp.headerVisible();
-	}
-	@Test(priority=4)
-	void text() {
-		HomePage hp=new HomePage(driver);
-		hp.headerText();	
+	void verifyNewsDisplayed() {
+		int count=hp.headerVisible();
+		Assert.assertNotEquals(count,0,"News are Displayed");
+
 	}
 	
 	@Test(priority=5)
-	void tooltips() {
-		HomePage hp=new HomePage(driver);
+	void verifyTooltipAndHeader() {
+		//=new HomePage(driver);
 		boolean flag = false;
 			flag=hp.tooltip();
 			Assert.assertEquals(flag,true);
 		}
 		
-	
 	
 
 

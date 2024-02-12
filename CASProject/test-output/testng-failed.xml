@@ -7,6 +7,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="testCases.VerifyAllNews">
+        <methods>
+          <include name="teardown"/>
+          <include name="verifyEachNews"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.VerifyAllNews -->
       <class name="testCases.VerifyUserDetails">
         <methods>
           <include name="teardown"/>

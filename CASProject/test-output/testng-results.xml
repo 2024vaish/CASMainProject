@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="14" passed="9" failed="1" skipped="0">
+<testng-results ignored="4" total="17" passed="11" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-11T16:00:38 IST" name="Suite" finished-at="2024-02-11T16:03:00 IST" duration-ms="142200">
+  <suite started-at="2024-02-12T17:06:52 IST" name="Suite" finished-at="2024-02-12T17:07:53 IST" duration-ms="60601">
     <groups>
     </groups>
-    <test started-at="2024-02-11T16:00:38 IST" name="Test" finished-at="2024-02-11T16:03:00 IST" duration-ms="142200">
+    <test started-at="2024-02-12T17:06:52 IST" name="Test" finished-at="2024-02-12T17:07:53 IST" duration-ms="60601">
       <class name="testCases.VerifyUserDetails">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.VerifyUserDetails@3ce1e309]" started-at="2024-02-11T16:00:39 IST" name="setup" finished-at="2024-02-11T16:00:54 IST" duration-ms="15486" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.VerifyUserDetails@6356695f]" started-at="2024-02-12T17:06:53 IST" name="setup" finished-at="2024-02-12T17:07:16 IST" duration-ms="23060" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,49 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="clickProfile()[pri:1, instance:testCases.VerifyUserDetails@3ce1e309]" started-at="2024-02-11T16:00:54 IST" name="clickProfile" finished-at="2024-02-11T16:01:05 IST" duration-ms="10537" status="PASS">
+        <test-method signature="clickProfile()[pri:1, instance:testCases.VerifyUserDetails@6356695f]" started-at="2024-02-12T17:07:16 IST" name="clickProfile" finished-at="2024-02-12T17:07:17 IST" duration-ms="974" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickProfile -->
-        <test-method signature="verifyDetails()[pri:2, instance:testCases.VerifyUserDetails@3ce1e309]" started-at="2024-02-11T16:01:05 IST" name="verifyDetails" finished-at="2024-02-11T16:01:06 IST" duration-ms="1274" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method signature="verifyDetails()[pri:2, instance:testCases.VerifyUserDetails@6356695f]" started-at="2024-02-12T17:07:17 IST" name="verifyDetails" finished-at="2024-02-12T17:07:18 IST" duration-ms="1148" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[element not interactable: [object HTMLButtonElement] has no size and location
-  (Session info: chrome=120.0.6099.130)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86c7eff78fb21ccbcb5b0d478cf5227d, actions {actions=[org.openqa.selenium.interactions.Sequence@59ed3e6c]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61724}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61724/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 86c7eff78fb21ccbcb5b0d478cf5227d]]>
+              <![CDATA[User Details are not correct. expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLButtonElement] has no size and location
-  (Session info: chrome=120.0.6099.130)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86c7eff78fb21ccbcb5b0d478cf5227d, actions {actions=[org.openqa.selenium.interactions.Sequence@59ed3e6c]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61724}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61724/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 86c7eff78fb21ccbcb5b0d478cf5227d
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:693)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:598)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:567)
-at pageObjects.HomePage.hoverOverElement(HomePage.java:61)
-at pageObjects.HomePage.clickProfileIcon(HomePage.java:66)
-at testCases.VerifyUserDetails.verifyDetails(VerifyUserDetails.java:46)
+              <![CDATA[java.lang.AssertionError: User Details are not correct. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at testCases.VerifyUserDetails.verifyDetails(VerifyUserDetails.java:48)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -91,47 +65,163 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDetails -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.VerifyUserDetails@3ce1e309]" started-at="2024-02-11T16:03:00 IST" name="teardown" finished-at="2024-02-11T16:03:00 IST" duration-ms="246" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.VerifyUserDetails@6356695f]" started-at="2024-02-12T17:07:52 IST" name="teardown" finished-at="2024-02-12T17:07:53 IST" duration-ms="223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.VerifyUserDetails -->
       <class name="testCases.VerifyAroundCognizant">
-        <test-method signature="scroll()[pri:1, instance:testCases.VerifyAroundCognizant@323b36e0]" started-at="2024-02-11T16:01:07 IST" name="scroll" finished-at="2024-02-11T16:01:07 IST" duration-ms="3" status="PASS">
+        <test-method signature="scroll()[pri:1, instance:testCases.VerifyAroundCognizant@4fb61f4a]" started-at="2024-02-12T17:07:18 IST" name="scroll" finished-at="2024-02-12T17:07:18 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scroll -->
-        <test-method signature="testcontent()[pri:2, instance:testCases.VerifyAroundCognizant@323b36e0]" started-at="2024-02-11T16:01:07 IST" name="testcontent" finished-at="2024-02-11T16:01:07 IST" duration-ms="302" status="PASS">
+        <test-method signature="verifyAroundCognizantPresent()[pri:2, instance:testCases.VerifyAroundCognizant@4fb61f4a]" started-at="2024-02-12T17:07:18 IST" name="verifyAroundCognizantPresent" finished-at="2024-02-12T17:07:19 IST" duration-ms="272" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcontent -->
-        <test-method signature="news()[pri:3, instance:testCases.VerifyAroundCognizant@323b36e0]" started-at="2024-02-11T16:01:07 IST" name="news" finished-at="2024-02-11T16:01:08 IST" duration-ms="582" status="PASS">
+        </test-method> <!-- verifyAroundCognizantPresent -->
+        <test-method signature="verifyNewsDisplayed()[pri:3, instance:testCases.VerifyAroundCognizant@4fb61f4a]" started-at="2024-02-12T17:07:19 IST" name="verifyNewsDisplayed" finished-at="2024-02-12T17:07:19 IST" duration-ms="556" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- news -->
-        <test-method signature="text()[pri:4, instance:testCases.VerifyAroundCognizant@323b36e0]" started-at="2024-02-11T16:01:08 IST" name="text" finished-at="2024-02-11T16:01:08 IST" duration-ms="415" status="PASS">
+        </test-method> <!-- verifyNewsDisplayed -->
+        <test-method signature="verifyTooltipAndHeader()[pri:5, instance:testCases.VerifyAroundCognizant@4fb61f4a]" started-at="2024-02-12T17:07:19 IST" name="verifyTooltipAndHeader" finished-at="2024-02-12T17:07:21 IST" duration-ms="1768" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- text -->
-        <test-method signature="tooltips()[pri:5, instance:testCases.VerifyAroundCognizant@323b36e0]" started-at="2024-02-11T16:01:08 IST" name="tooltips" finished-at="2024-02-11T16:01:10 IST" duration-ms="1363" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tooltips -->
+        </test-method> <!-- verifyTooltipAndHeader -->
       </class> <!-- testCases.VerifyAroundCognizant -->
       <class name="testCases.VerifyAllNews">
-        <test-method signature="verifySeeAllLink()[pri:1, instance:testCases.VerifyAllNews@2e005c4b]" started-at="2024-02-11T16:01:10 IST" name="verifySeeAllLink" finished-at="2024-02-11T16:01:11 IST" duration-ms="1217" status="PASS">
+        <test-method signature="verifySeeAllLink()[pri:1, instance:testCases.VerifyAllNews@4a94ee4]" started-at="2024-02-12T17:07:21 IST" name="verifySeeAllLink" finished-at="2024-02-12T17:07:24 IST" duration-ms="2910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySeeAllLink -->
-        <test-method signature="verifyNewsHeaders()[pri:2, instance:testCases.VerifyAllNews@2e005c4b]" started-at="2024-02-11T16:01:11 IST" name="verifyNewsHeaders" finished-at="2024-02-11T16:01:15 IST" duration-ms="4422" status="PASS">
+        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@4a94ee4]" started-at="2024-02-12T17:07:24 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-02-12T17:07:29 IST" duration-ms="5073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cognizant’s five retail trends for 2024]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewsHeaders -->
-        <test-method signature="verifyEachNews()[pri:3, instance:testCases.VerifyAllNews@2e005c4b]" started-at="2024-02-11T16:01:15 IST" name="verifyEachNews" finished-at="2024-02-11T16:03:00 IST" duration-ms="104817" status="PASS">
+        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@4a94ee4]" started-at="2024-02-12T17:07:29 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-02-12T17:07:29 IST" duration-ms="191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Commemorating India’s 75th Republic Day across Cognizant India offices]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsHeaders -->
+        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@4a94ee4]" started-at="2024-02-12T17:07:29 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-02-12T17:07:30 IST" duration-ms="169" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Beyond the Desk: Kritika Tripathi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsHeaders -->
+        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@4a94ee4]" started-at="2024-02-12T17:07:30 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-02-12T17:07:30 IST" duration-ms="185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Black History Month: how art shapes culture and society]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsHeaders -->
+        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@4a94ee4]" started-at="2024-02-12T17:07:30 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-02-12T17:07:30 IST" duration-ms="199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InFocus – Jithin Paul]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsHeaders -->
+        <test-method signature="verifyEachNews()[pri:3, instance:testCases.VerifyAllNews@4a94ee4]" started-at="2024-02-12T17:07:30 IST" name="verifyEachNews" finished-at="2024-02-12T17:07:52 IST" duration-ms="22137" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a aria-label="..." data-automation-id="newsItemTitle" title="Meet the finalists of the 2024 Impact Awards" href="https://cognizantonline.sharepoint.com/sites/Be.Cognizant/SitePages/Meet-the-finalists-of-the-2024-Impact-Awards.aspx" target="_blank" data-interception="propagate" class="k_a_91bed31b text_title-181 af_a_91bed31b l_a_91bed31b bf_a_91bed31b" id="news_text_title" tabindex="-1" style="-webkit-line-clamp: 2;">Meet the finalists of the 2024 Impact Awards</a> is not clickable at point (1123, 539). Other element would receive the click: <div class="ms-Stack custom-footer-content justify-center justify-right-tablets-or-above css-154">...</div>
+  (Session info: chrome=120.0.6099.130)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [12784bd38705635914f659bf8db2e606, clickElement {id=5FE29A023C7CD021F3173EBA0BD39540_element_351}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57715/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (12784bd38705635914f659bf8db2e606)] -> xpath: //a[@id='news_text_title']]
+Session ID: 12784bd38705635914f659bf8db2e606]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a aria-label="..." data-automation-id="newsItemTitle" title="Meet the finalists of the 2024 Impact Awards" href="https://cognizantonline.sharepoint.com/sites/Be.Cognizant/SitePages/Meet-the-finalists-of-the-2024-Impact-Awards.aspx" target="_blank" data-interception="propagate" class="k_a_91bed31b text_title-181 af_a_91bed31b l_a_91bed31b bf_a_91bed31b" id="news_text_title" tabindex="-1" style="-webkit-line-clamp: 2;">Meet the finalists of the 2024 Impact Awards</a> is not clickable at point (1123, 539). Other element would receive the click: <div class="ms-Stack custom-footer-content justify-center justify-right-tablets-or-above css-154">...</div>
+  (Session info: chrome=120.0.6099.130)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [12784bd38705635914f659bf8db2e606, clickElement {id=5FE29A023C7CD021F3173EBA0BD39540_element_351}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57715/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (12784bd38705635914f659bf8db2e606)] -> xpath: //a[@id='news_text_title']]
+Session ID: 12784bd38705635914f659bf8db2e606
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at pageObjects.News.clickNewsHeader(News.java:65)
+at testCases.VerifyAllNews.verifyEachNews(VerifyAllNews.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEachNews -->

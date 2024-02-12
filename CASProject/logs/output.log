@@ -1,40 +1,4 @@
-16:02:29.761 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
-16:02:29.770 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
-16:02:29.771 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
-16:02:29.771 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
-16:02:29.774 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
-16:02:50.507 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save core properties part
-16:02:50.508 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
-16:02:50.509 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
-16:02:50.511 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
-16:02:50.512 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
-16:02:50.514 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
-16:02:50.514 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
-16:02:50.515 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
-16:02:50.517 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
-16:02:50.517 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
-16:02:50.519 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
-16:02:50.520 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
-16:02:50.521 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
-16:02:50.523 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
-16:02:50.523 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
-16:02:50.523 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
-16:02:50.525 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
-16:02:50.538 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save core properties part
-16:02:50.539 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
-16:02:50.540 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
-16:02:50.543 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
-16:02:50.543 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
-16:02:50.545 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
-16:02:50.546 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
-16:02:50.547 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
-16:02:50.548 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
-16:02:50.549 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
-16:02:50.551 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
-16:02:50.553 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
-16:02:50.553 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
-16:02:50.555 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
-16:02:50.556 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
-16:02:50.556 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
-16:02:50.558 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
-16:03:00.612 [main] INFO  testCases.VerifyUserDetails - All Tests have passed.
+17:07:30.120 [main] INFO  testCases.VerifyUserDetails - Verifying News Present on Both pages
+17:07:30.306 [main] INFO  testCases.VerifyUserDetails - Verifying News Present on Both pages
+17:07:30.509 [main] INFO  testCases.VerifyUserDetails - Capturing information of top 5 News
+17:07:52.920 [main] INFO  testCases.VerifyUserDetails - All Tests Cases are completed.

@@ -1,0 +1,51 @@
+17:06:12.281 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+17:06:12.347 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+17:06:12.361 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+17:06:12.378 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+17:06:12.379 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+17:06:12.381 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+17:06:12.389 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+17:06:12.399 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+17:06:12.409 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+17:06:12.420 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+17:06:12.422 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+17:06:12.427 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+17:06:12.428 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+17:06:12.430 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+17:06:12.436 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+17:06:13.362 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:06:13.364 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:06:13.541 [main] INFO  testCases.VerifyUserDetails - Verifying News Present on Both pages
+17:06:18.275 [main] INFO  testCases.VerifyUserDetails - Verifying News Present on Both pages
+17:06:18.572 [main] INFO  testCases.VerifyUserDetails - Verifying News Present on Both pages
+17:06:18.829 [main] INFO  testCases.VerifyUserDetails - Verifying News Present on Both pages
+17:06:19.081 [main] INFO  testCases.VerifyUserDetails - Verifying News Present on Both pages
+17:06:19.335 [main] INFO  testCases.VerifyUserDetails - Capturing information of top 5 News
+17:06:41.855 [main] INFO  testCases.VerifyUserDetails - All Tests Cases are completed.
+17:06:54.881 [main] INFO  testCases.VerifyUserDetails - Setting up the driver
+17:07:16.488 [main] INFO  testCases.VerifyUserDetails - Clicking on Profile Icon
+17:07:17.477 [main] INFO  testCases.VerifyUserDetails - Verifying User Details
+17:07:18.995 [main] INFO  testCases.VerifyUserDetails - Verifying AroundCognizant is displayed or not.
+17:07:21.605 [main] INFO  testCases.VerifyUserDetails - Clickin on See All Link
+17:07:23.500 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save core properties part
+17:07:23.502 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+17:07:23.952 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+17:07:23.979 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+17:07:23.992 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+17:07:24.018 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+17:07:24.020 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+17:07:24.021 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+17:07:24.026 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+17:07:24.042 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+17:07:24.047 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+17:07:24.051 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+17:07:24.052 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+17:07:24.056 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+17:07:24.058 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+17:07:24.059 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+17:07:24.067 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+17:07:24.576 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+17:07:24.580 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+17:07:24.681 [main] INFO  testCases.VerifyUserDetails - Verifying News Present on Both pages
+17:07:29.755 [main] INFO  testCases.VerifyUserDetails - Verifying News Present on Both pages
+17:07:29.949 [main] INFO  testCases.VerifyUserDetails - Verifying News Present on Both pages

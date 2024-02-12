@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -23,15 +24,17 @@ public class News extends BasePage {
 	public List<WebElement> newsLinks=driver.findElements(By.xpath("//a[@id='news_text_title']"));
 	
 	//newsLinks=
-	public void getlist() {
-		
+	public void getlist() throws InterruptedException {
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		Thread.sleep(5);
+		js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
 		newsLinks=driver.findElements(By.xpath("//a[@id='news_text_title']"));
 		
 		
 	}
 	
-	public List<String> getNewsText(){
-	//	this.getlist();
+	public List<String> getNewsText() throws InterruptedException{
+		this.getlist();
 		List<String> newsHeadings=new ArrayList<String>();
 		for(WebElement ele:newsLinks)
 		{
@@ -41,7 +44,7 @@ public class News extends BasePage {
 		return newsHeadings;
 	}
 	
-	public void writeToExcel() throws IOException {
+	public void writeToExcel() throws IOException, InterruptedException {
 		this.getlist();
 		ExcelUtils eu=new ExcelUtils();
 		List<String> newsHeadings=new ArrayList<String>();

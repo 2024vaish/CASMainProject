@@ -35,7 +35,8 @@ public class BaseClass {
 		FileReader file = new FileReader("C:\\Users\\2303838\\eclipse-workspace-selenium\\CASProject\\CASProject\\src\\test\\resources\\config.properties");
 		p= new Properties();
 		p.load(file);
-		 logger=LogManager.getLogger(this.getClass());
+		logger=LogManager.getLogger(this.getClass());
+		logger.info("Setting up the driver");
 		if(br.equals("Chrome")) {
 			driver = new ChromeDriver();
 }		else if(br.equals("edge")) {
@@ -48,17 +49,17 @@ public class BaseClass {
 	
 	@AfterTest
 	public void teardown() {
-		logger.info("All Tests have passed.");
+		logger.info("All Tests Cases are completed.");
 		driver.close();
 	}
 	
-	public String captureScreen(String tname) {
+	public String captureScreen(String folder,String tname) {
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date(0));
 		
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
 		
-		String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\" + tname + "_" + timeStamp + ".png";
+		String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\" + folder+"\\"+tname + "_" + timeStamp + ".png";
 		File targetFile=new File(targetFilePath);
 		
 		sourceFile.renameTo(targetFile);
