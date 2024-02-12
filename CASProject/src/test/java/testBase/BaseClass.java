@@ -49,7 +49,7 @@ public class BaseClass {
 	@AfterTest
 	public void teardown() {
 		logger.info("All Tests have passed.");
-		//driver.close();
+		driver.close();
 	}
 	
 	public String captureScreen(String tname) {

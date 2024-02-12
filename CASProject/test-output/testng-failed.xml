@@ -10,18 +10,10 @@
       <class name="testCases.VerifyUserDetails">
         <methods>
           <include name="teardown"/>
+          <include name="verifyDetails"/>
           <include name="setup"/>
-          <include name="Capture"/>
         </methods>
       </class> <!-- testCases.VerifyUserDetails -->
-      <class name="testCases.VerifyAllNews">
-        <methods>
-          <include name="teardown"/>
-          <include name="test2"/>
-          <include name="test"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.VerifyAllNews -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

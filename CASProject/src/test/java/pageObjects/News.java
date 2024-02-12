@@ -12,6 +12,7 @@ import Utilities.ExcelUtils;
 
 public class News extends BasePage {
 	ExcelUtils obj=new ExcelUtils();
+	HomePage hp=new HomePage(driver);
 	public News(WebDriver driver) {
 		super(driver);
 		
@@ -19,12 +20,25 @@ public class News extends BasePage {
 
 
 	WebElement newsTitle=driver.findElement(By.xpath("//span[contains(text(),'News')]"));
-	public List<WebElement> newsLinks;//=driver.findElements(By.xpath("//a[@id='news_text_title']"));
-	//WebElement info=driver.findElement(By.id("fa45f946-463e-428f-a84b-0bbbde09c3ba"));
+	public List<WebElement> newsLinks=driver.findElements(By.xpath("//a[@id='news_text_title']"));
 	
+	//newsLinks=
 	public void getlist() {
+		
 		newsLinks=driver.findElements(By.xpath("//a[@id='news_text_title']"));
 		
+		
+	}
+	
+	public List<String> getNewsText(){
+	//	this.getlist();
+		List<String> newsHeadings=new ArrayList<String>();
+		for(WebElement ele:newsLinks)
+		{
+			newsHeadings.add(ele.getText());
+		}
+		System.out.println(newsHeadings.size()+"--------");
+		return newsHeadings;
 	}
 	
 	public void writeToExcel() throws IOException {

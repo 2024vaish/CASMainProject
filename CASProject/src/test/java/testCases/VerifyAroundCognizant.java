@@ -19,31 +19,35 @@ public class VerifyAroundCognizant extends BaseClass {
 	
 	
 	@Test(priority=1)
-	void testcontent()
-	{
-		hp=new HomePage(driver);
-		Assert.assertEquals(hp.checkTextPresence(), true);
-		//lp.takeScreenshot(AroundCognizant,"file");
-	}
-	@Test(priority=2)
 	void scroll() {
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		hp.scroll();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+		HomePage hp=new HomePage(driver);
+		
 	}
+	
+	@Test(priority=2)
+	void testcontent()
+	{
+		HomePage hp=new HomePage(driver);
+		boolean text=hp.checkTextPresence();
+		Assert.assertEquals(text, true,"Around cognizant is not displayed");
+		
+	}
+	
 	@Test(priority=3)
 	void news() {
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+		HomePage hp=new HomePage(driver);
 		hp.headerVisible();
 	}
 	@Test(priority=4)
 	void text() {
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+		HomePage hp=new HomePage(driver);
 		hp.headerText();	
 	}
 	
 	@Test(priority=5)
 	void tooltips() {
+		HomePage hp=new HomePage(driver);
 		boolean flag = false;
 			flag=hp.tooltip();
 			Assert.assertEquals(flag,true);

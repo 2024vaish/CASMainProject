@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.time.Duration;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -8,8 +10,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage extends BasePage{
 	//WebDriver driver;
@@ -19,7 +24,7 @@ public class HomePage extends BasePage{
 	}
 	JavascriptExecutor js=(JavascriptExecutor) driver;
 	
-	By click_Profile_icon=By.id("meInitialsButton");
+	By click_Profile_icon=By.id("O365_MainLink_Me");//mectrl_main_trigger
 	By click_name=By.id("mectrl_currentAccount_primary");
 	By click_email = By.id("mectrl_currentAccount_secondary");
 	String name;
@@ -37,43 +42,68 @@ public class HomePage extends BasePage{
 	@FindBy(xpath="//a//strong[text()='See all']")
 	WebElement seeAllLink;//=driver.findElement(By.xpath("//a//strong[text()='See all']"));
 	
-	WebElement element1=driver.findElement(By.xpath("//*[@id='getting-social']"));
+	@FindBy(id="O365_MainLink_Me")
+	WebElement btn;//=driver.findElement(click_Profile_icon);
 	
-	public Map<String,String> functionality(){
-		WebElement btn=driver.findElement(click_Profile_icon);
-		//JavascriptExecutor jse = (JavascriptExecutor)driver;
+	List<String> text = new ArrayList<String>();
+	
+	public void getNewsLinks() {
+		newsLinks=driver.findElements(By.xpath("//div[@id='6a300658-3c93-45bc-8746-5964a4379bbf']//a[@id='news_text_title']"));
+		
+	}
+	public void scroll(WebElement ele) {
+		JavascriptExecutor jse=(JavascriptExecutor) driver;
+		jse.executeScript("arguments[0].scrollIntoView();", ele);
+	}
+ 	
+	 public void hoverOverElement(WebElement ele) {
+		Actions act=new Actions(driver);
+		act.moveToElement(ele).perform();
+		 
+	 }
+	
+	public void clickProfileIcon() {
+		hoverOverElement(btn);
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.elementToBeClickable(click_Profile_icon));
 		js.executeScript ("arguments[0].click()",btn);
+	}
+	
+	public List<String> getUserDetails() {
 		name = driver.findElement(click_name).getText();
 		email = driver.findElement(click_email).getText();
-		Map<String,String> mp=new HashMap<String,String>();
-		mp.put(name,email);
-		js.executeScript ("arguments[0].click()",btn);
+		List<String> details=new ArrayList<String>();
+		details.add(name);
+		details.add(email);
 		System.out.println(name+"**********"+email);
-		return mp;
+		return details;
 	}
 	
 	public boolean checkTextPresence()
 	{
+		scroll(AroundCognizant);
 		boolean status=AroundCognizant.isDisplayed();		
 		return status;
 	}
-	public void scroll() {
-		JavascriptExecutor jse=(JavascriptExecutor) driver;
-		jse.executeScript("arguments[0].scrollIntoView();", untill);
-	}
+	
 	public int headerVisible() {
-		int count=newsLinks.size();
+		int count=newsLinks.size();	
+		
 	    return count;
+	    
 	     
 	}
-	public String headerText() {
-		String text = null;
-		for(int i=0;i<newsLinks.size();i++) {
-	    	 WebElement element=newsLinks.get(i);
-	    	 text = element.getText();
-	    	 }
-		return text;
+
+	public List<String> headerText() {
+		this.getNewsLinks();
+		System.out.println("Home Page NewsLinks Count :"+newsLinks.size());
+		for(WebElement ele:newsLinks) {
+			text.add(ele.getText());
+		}
+		System.out.println("Home Page News Count :"+text.size());
+		return text; 
 	}
+	
 	
 	public boolean tooltip() {
 	
@@ -89,6 +119,21 @@ public class HomePage extends BasePage{
 		}
 		return flag;
 	}
+
+	 public void clickSeeAllLink(){
+		scroll(seeAllLink);
+		js.executeScript("arguments[0].scrollIntoView();", seeAllLink);
+		hoverOverElement(seeAllLink);
+		seeAllLink.click();
+ 		
+		
+}
+
+
+	
+	
+/*
+
 	public void sample() throws InterruptedException {
 		List<WebElement> el=driver.findElements(By.xpath("//div[@id='6a300658-3c93-45bc-8746-5964a4379bbf']//a[@id='news_text_title']"));
 		   String[] data=new String[6];
@@ -99,9 +144,9 @@ public class HomePage extends BasePage{
 			   System.out.println(e.getText());
 		   }
 		 //  WebElement element=driver.findElement(By.xpath("//*[@class=\"fontSizeMedium\"]/strong"));
-		   js.executeScript("arguments[0].scrollIntoView();", seeAllLink);
+		  
 		   Thread.sleep(2000);	          
-        seeAllLink.click();
+       // seeAllLink.click();
         Thread.sleep(5000);	       
         List<WebElement> list2=driver.findElements(By.xpath("//a[starts-with(@class,'k_a_91bed31b text_title')]"));
         String[] data1=new String[8];
@@ -134,5 +179,5 @@ public class HomePage extends BasePage{
 		seeAllLink.click();
 		System.out.println(a);
 	}
-	
+	*/
 }
