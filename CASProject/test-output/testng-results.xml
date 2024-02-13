@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="17" passed="13" failed="0" skipped="0">
+<testng-results ignored="16" total="24" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-12T22:58:31 IST" name="Suite" finished-at="2024-02-12T23:01:20 IST" duration-ms="168877">
+  <suite started-at="2024-02-13T15:12:03 IST" name="Suite" finished-at="2024-02-13T15:13:38 IST" duration-ms="94790">
     <groups>
+      <group name="regression">
+        <method signature="VerifyAllNews.verifySeeAllLink()[pri:1, instance:testCases.VerifyAllNews@6b81ce95]" name="verifySeeAllLink" class="testCases.VerifyAllNews"/>
+        <method signature="VerifyAroundCognizant.verifyNewsDisplayed()[pri:2, instance:testCases.VerifyAroundCognizant@5876a9af]" name="verifyNewsDisplayed" class="testCases.VerifyAroundCognizant"/>
+        <method signature="VerifyAllNews.verifySeeAllLink()[pri:1, instance:testCases.VerifyAllNews@49e53c76]" name="verifySeeAllLink" class="testCases.VerifyAllNews"/>
+        <method signature="VerifyAroundCognizant.verifyNewsDisplayed()[pri:2, instance:testCases.VerifyAroundCognizant@38d8f54a]" name="verifyNewsDisplayed" class="testCases.VerifyAroundCognizant"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="VerifyAllNews.verifySeeAllLink()[pri:1, instance:testCases.VerifyAllNews@6b81ce95]" name="verifySeeAllLink" class="testCases.VerifyAllNews"/>
+        <method signature="VerifyAroundCognizant.verifyAroundCognizantPresent()[pri:1, instance:testCases.VerifyAroundCognizant@5876a9af]" name="verifyAroundCognizantPresent" class="testCases.VerifyAroundCognizant"/>
+        <method signature="VerifyAroundCognizant.verifyNewsDisplayed()[pri:2, instance:testCases.VerifyAroundCognizant@5876a9af]" name="verifyNewsDisplayed" class="testCases.VerifyAroundCognizant"/>
+        <method signature="VerifyUserDetails.clickProfile()[pri:1, instance:testCases.VerifyUserDetails@4a94ee4]" name="clickProfile" class="testCases.VerifyUserDetails"/>
+        <method signature="VerifyAllNews.verifySeeAllLink()[pri:1, instance:testCases.VerifyAllNews@49e53c76]" name="verifySeeAllLink" class="testCases.VerifyAllNews"/>
+        <method signature="VerifyAroundCognizant.verifyAroundCognizantPresent()[pri:1, instance:testCases.VerifyAroundCognizant@38d8f54a]" name="verifyAroundCognizantPresent" class="testCases.VerifyAroundCognizant"/>
+        <method signature="VerifyAroundCognizant.verifyNewsDisplayed()[pri:2, instance:testCases.VerifyAroundCognizant@38d8f54a]" name="verifyNewsDisplayed" class="testCases.VerifyAroundCognizant"/>
+        <method signature="VerifyUserDetails.clickProfile()[pri:1, instance:testCases.VerifyUserDetails@409bf450]" name="clickProfile" class="testCases.VerifyUserDetails"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-02-12T22:58:31 IST" name="Test" finished-at="2024-02-12T23:01:20 IST" duration-ms="168877">
+    <test started-at="2024-02-13T15:12:03 IST" name="Chrometest" finished-at="2024-02-13T15:12:34 IST" duration-ms="31150">
       <class name="testCases.VerifyUserDetails">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.VerifyUserDetails@6356695f]" started-at="2024-02-12T22:58:32 IST" name="setup" finished-at="2024-02-12T22:59:19 IST" duration-ms="46908" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.VerifyUserDetails@4a94ee4]" started-at="2024-02-13T15:12:04 IST" name="setup" finished-at="2024-02-13T15:12:22 IST" duration-ms="17933" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,102 +34,70 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="clickProfile()[pri:1, instance:testCases.VerifyUserDetails@6356695f]" started-at="2024-02-12T22:59:19 IST" name="clickProfile" finished-at="2024-02-12T22:59:21 IST" duration-ms="2584" status="PASS">
+        <test-method signature="clickProfile()[pri:1, instance:testCases.VerifyUserDetails@4a94ee4]" started-at="2024-02-13T15:12:22 IST" name="clickProfile" finished-at="2024-02-13T15:12:24 IST" duration-ms="2522" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickProfile -->
-        <test-method signature="verifyDetails()[pri:2, instance:testCases.VerifyUserDetails@6356695f]" started-at="2024-02-12T22:59:21 IST" name="verifyDetails" finished-at="2024-02-12T22:59:23 IST" duration-ms="1266" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDetails -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.VerifyUserDetails@6356695f]" started-at="2024-02-12T23:01:19 IST" name="teardown" finished-at="2024-02-12T23:01:20 IST" duration-ms="440" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.VerifyUserDetails@4a94ee4]" started-at="2024-02-13T15:12:34 IST" name="teardown" finished-at="2024-02-13T15:12:34 IST" duration-ms="270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.VerifyUserDetails -->
       <class name="testCases.VerifyAroundCognizant">
-        <test-method signature="scroll()[pri:1, instance:testCases.VerifyAroundCognizant@4fb61f4a]" started-at="2024-02-12T22:59:23 IST" name="scroll" finished-at="2024-02-12T22:59:23 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scroll -->
-        <test-method signature="verifyAroundCognizantPresent()[pri:2, instance:testCases.VerifyAroundCognizant@4fb61f4a]" started-at="2024-02-12T22:59:23 IST" name="verifyAroundCognizantPresent" finished-at="2024-02-12T22:59:23 IST" duration-ms="763" status="PASS">
+        <test-method signature="verifyAroundCognizantPresent()[pri:1, instance:testCases.VerifyAroundCognizant@5876a9af]" started-at="2024-02-13T15:12:24 IST" name="verifyAroundCognizantPresent" finished-at="2024-02-13T15:12:24 IST" duration-ms="145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAroundCognizantPresent -->
-        <test-method signature="verifyNewsDisplayed()[pri:3, instance:testCases.VerifyAroundCognizant@4fb61f4a]" started-at="2024-02-12T22:59:23 IST" name="verifyNewsDisplayed" finished-at="2024-02-12T22:59:24 IST" duration-ms="510" status="PASS">
+        <test-method signature="verifyNewsDisplayed()[pri:2, instance:testCases.VerifyAroundCognizant@5876a9af]" started-at="2024-02-13T15:12:24 IST" name="verifyNewsDisplayed" finished-at="2024-02-13T15:12:28 IST" duration-ms="3886" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewsDisplayed -->
-        <test-method signature="verifyTooltipAndHeader()[pri:5, instance:testCases.VerifyAroundCognizant@4fb61f4a]" started-at="2024-02-12T22:59:24 IST" name="verifyTooltipAndHeader" finished-at="2024-02-12T22:59:26 IST" duration-ms="2097" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTooltipAndHeader -->
       </class> <!-- testCases.VerifyAroundCognizant -->
       <class name="testCases.VerifyAllNews">
-        <test-method signature="verifySeeAllLink()[pri:1, instance:testCases.VerifyAllNews@4a94ee4]" started-at="2024-02-12T22:59:26 IST" name="verifySeeAllLink" finished-at="2024-02-12T22:59:29 IST" duration-ms="3444" status="PASS">
+        <test-method signature="verifySeeAllLink()[pri:1, instance:testCases.VerifyAllNews@6b81ce95]" started-at="2024-02-13T15:12:28 IST" name="verifySeeAllLink" finished-at="2024-02-13T15:12:34 IST" duration-ms="5843" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySeeAllLink -->
-        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@4a94ee4]" started-at="2024-02-12T22:59:30 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-02-12T22:59:33 IST" duration-ms="3637" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Cognizant inaugurates Bhubaneshwar Center: A new chapter begins!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewsHeaders -->
-        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@4a94ee4]" started-at="2024-02-12T22:59:33 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-02-12T22:59:34 IST" duration-ms="286" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Cognizant’s five retail trends for 2024]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewsHeaders -->
-        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@4a94ee4]" started-at="2024-02-12T22:59:34 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-02-12T22:59:34 IST" duration-ms="263" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Beyond the Desk: Kritika Tripathi]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewsHeaders -->
-        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@4a94ee4]" started-at="2024-02-12T22:59:34 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-02-12T22:59:34 IST" duration-ms="286" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Black History Month: how art shapes culture and society]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewsHeaders -->
-        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@4a94ee4]" started-at="2024-02-12T22:59:34 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-02-12T22:59:35 IST" duration-ms="285" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[InFocus – Jithin Paul]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewsHeaders -->
-        <test-method signature="verifyEachNews()[pri:3, instance:testCases.VerifyAllNews@4a94ee4]" started-at="2024-02-12T22:59:35 IST" name="verifyEachNews" finished-at="2024-02-12T23:01:19 IST" duration-ms="104745" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyEachNews -->
       </class> <!-- testCases.VerifyAllNews -->
-    </test> <!-- Test -->
+    </test> <!-- Chrometest -->
+    <test started-at="2024-02-13T15:12:42 IST" name="EdgeTest" finished-at="2024-02-13T15:13:38 IST" duration-ms="56426">
+      <class name="testCases.VerifyUserDetails">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.VerifyUserDetails@409bf450]" started-at="2024-02-13T15:12:42 IST" name="setup" finished-at="2024-02-13T15:13:18 IST" duration-ms="36408" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="clickProfile()[pri:1, instance:testCases.VerifyUserDetails@409bf450]" started-at="2024-02-13T15:13:18 IST" name="clickProfile" finished-at="2024-02-13T15:13:21 IST" duration-ms="2557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickProfile -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.VerifyUserDetails@409bf450]" started-at="2024-02-13T15:13:38 IST" name="teardown" finished-at="2024-02-13T15:13:38 IST" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.VerifyUserDetails -->
+      <class name="testCases.VerifyAroundCognizant">
+        <test-method signature="verifyAroundCognizantPresent()[pri:1, instance:testCases.VerifyAroundCognizant@38d8f54a]" started-at="2024-02-13T15:13:21 IST" name="verifyAroundCognizantPresent" finished-at="2024-02-13T15:13:21 IST" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAroundCognizantPresent -->
+        <test-method signature="verifyNewsDisplayed()[pri:2, instance:testCases.VerifyAroundCognizant@38d8f54a]" started-at="2024-02-13T15:13:21 IST" name="verifyNewsDisplayed" finished-at="2024-02-13T15:13:32 IST" duration-ms="11314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsDisplayed -->
+      </class> <!-- testCases.VerifyAroundCognizant -->
+      <class name="testCases.VerifyAllNews">
+        <test-method signature="verifySeeAllLink()[pri:1, instance:testCases.VerifyAllNews@49e53c76]" started-at="2024-02-13T15:13:32 IST" name="verifySeeAllLink" finished-at="2024-02-13T15:13:38 IST" duration-ms="5700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySeeAllLink -->
+      </class> <!-- testCases.VerifyAllNews -->
+    </test> <!-- EdgeTest -->
   </suite> <!-- Suite -->
 </testng-results>

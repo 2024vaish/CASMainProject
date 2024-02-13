@@ -1,39 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="br" value="Chrome"/>
   <listeners>
     <listener class-name="Utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Chrometest(failed)">
+    <parameter name="br" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
     <classes>
-      <class name="testCases.VerifyAllNews">
-        <methods>
-          <include name="teardown"/>
-          <include name="verifySeeAllLink"/>
-          <include name="verifyNewsHeaders"/>
-          <include name="verifyEachNews"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.VerifyAllNews -->
       <class name="testCases.VerifyUserDetails">
         <methods>
-          <include name="teardown"/>
-          <include name="verifyDetails"/>
           <include name="clickProfile"/>
-          <include name="setup"/>
         </methods>
       </class> <!-- testCases.VerifyUserDetails -->
-      <class name="testCases.VerifyAroundCognizant">
-        <methods>
-          <include name="teardown"/>
-          <include name="scroll"/>
-          <include name="verifyTooltipAndHeader"/>
-          <include name="verifyNewsDisplayed"/>
-          <include name="setup"/>
-          <include name="verifyAroundCognizantPresent"/>
-        </methods>
-      </class> <!-- testCases.VerifyAroundCognizant -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Chrometest(failed) -->
+  <test thread-count="5" name="EdgeTest(failed)">
+    <parameter name="br" value="Edge"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.VerifyUserDetails">
+        <methods>
+          <include name="clickProfile"/>
+        </methods>
+      </class> <!-- testCases.VerifyUserDetails -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

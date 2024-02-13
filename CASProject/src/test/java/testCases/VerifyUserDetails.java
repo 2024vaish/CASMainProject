@@ -24,22 +24,22 @@ import testBase.BaseClass;
 
 public class VerifyUserDetails extends BaseClass {
 	List<String>details;
-	@Test(priority=1)
+	@Test(priority=1,groups= {"smoke"})
 	public void clickProfile() throws InterruptedException {
 		logger.info("Clicking on Profile Icon");
 		hp= new HomePage(driver);
-		//Thread.sleep(10000);
+		
 		hp.clickProfileIcon();
+		captureScreen("UserDetails");
 		
 	}
 		
-	@Test(priority=2)
+	@Test(priority=2,groups= {"regression"})
 	public void verifyDetails() {
 		logger.info("Verifying User Details");
 		details=hp.getUserDetails();
 		boolean username=details.get(0).equals(p.getProperty("UserName"));
 		boolean email=details.get(1).equals(p.getProperty("email"));
-		System.out.println(username+"and"+email);
 		
 		boolean flag=false;
 		if(username && email)
