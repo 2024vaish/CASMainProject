@@ -14,13 +14,6 @@
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.VerifyAllNews -->
-      <class name="testCases.VerifyUserDetails">
-        <methods>
-          <include name="teardown"/>
-          <include name="verifyDetails"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.VerifyUserDetails -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

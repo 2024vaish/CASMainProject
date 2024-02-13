@@ -14,20 +14,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageObjects.HomePage;
-import pageObjects.PageObject;
 import testBase.BaseClass;
 
 public class VerifyAroundCognizant extends BaseClass {
 	HomePage hp;
-	
-	@Test(priority=1)
-	void scroll() {
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		HomePage hp=new HomePage(driver);
 		
-	}
-	
-	@Test(priority=2)
+	@Test(priority=1,groups= {"smoke"})
 	void verifyAroundCognizantPresent()
 	{
 		logger.info("Verifying AroundCognizant is displayed or not.");
@@ -37,15 +29,16 @@ public class VerifyAroundCognizant extends BaseClass {
 		
 	}
 	
-	@Test(priority=3)
-	void verifyNewsDisplayed() {
+	@Test(priority=2,groups= {"smoke","regression"})
+	void verifyNewsDisplayed() throws IOException {
 		int count=hp.headerVisible();
 		Assert.assertNotEquals(count,0,"News are Displayed");
+		captureScreen("News Under AroundCognizant");
 
 	}
 	
-	@Test(priority=5)
-	void verifyTooltipAndHeader() {
+	@Test(priority=3,groups= {"regression"})
+	void verifyTooltipAndHeader() throws InterruptedException  {
 		//=new HomePage(driver);
 		boolean flag = false;
 			flag=hp.tooltip();
