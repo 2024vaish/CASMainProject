@@ -1,22 +1,14 @@
 package pageObjects;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import Utilities.ExcelUtils;
 
 public class HomePage extends BasePage{
@@ -43,10 +35,10 @@ public class HomePage extends BasePage{
 	WebElement untill;
 	
 	@FindBy(xpath="//a//strong[text()='See all']")
-	WebElement seeAllLink;//=driver.findElement(By.xpath("//a//strong[text()='See all']"));
+	WebElement seeAllLink;
 	
 	@FindBy(id="O365_MainLink_Me")
-	WebElement profileIcon;//=driver.findElement(click_Profile_icon);
+	WebElement profileIcon;
 	
 	List<String> text = new ArrayList<String>();
 	
@@ -55,7 +47,8 @@ public class HomePage extends BasePage{
 	}
 	
  	
-	public void clickProfileIcon() {
+	public void clickProfileIcon() throws InterruptedException {
+		Thread.sleep(10000);
 		hoverOverElement(profileIcon);
 		js.executeScript ("arguments[0].click()",profileIcon);
 		try {
@@ -91,7 +84,6 @@ public class HomePage extends BasePage{
 	
 	public int headerVisible() throws IOException {
 		int count=newsLinks.size();	
-		this.headerText();
 		return count;  
 	}
 

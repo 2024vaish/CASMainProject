@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="11" failed="1" skipped="0">
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-13T16:50:46 IST" name="Suite" finished-at="2024-02-13T16:53:29 IST" duration-ms="163639">
+  <suite started-at="2024-03-13T16:07:25 IST" name="Suite" finished-at="2024-03-13T16:10:42 IST" duration-ms="196820">
     <groups>
       <group name="regression">
-        <method signature="VerifyAllNews.verifySeeAllLink()[pri:1, instance:testCases.VerifyAllNews@16eb3ea3]" name="verifySeeAllLink" class="testCases.VerifyAllNews"/>
-        <method signature="VerifyAllNews.verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@16eb3ea3]" name="verifyNewsHeaders" class="testCases.VerifyAllNews"/>
-        <method signature="VerifyAroundCognizant.verifyNewsDisplayed()[pri:2, instance:testCases.VerifyAroundCognizant@6caf0677]" name="verifyNewsDisplayed" class="testCases.VerifyAroundCognizant"/>
-        <method signature="VerifyUserDetails.verifyDetails()[pri:2, instance:testCases.VerifyUserDetails@8458f04]" name="verifyDetails" class="testCases.VerifyUserDetails"/>
-        <method signature="VerifyAllNews.verifyEachNews()[pri:3, instance:testCases.VerifyAllNews@16eb3ea3]" name="verifyEachNews" class="testCases.VerifyAllNews"/>
-        <method signature="VerifyAroundCognizant.verifyTooltipAndHeader()[pri:3, instance:testCases.VerifyAroundCognizant@6caf0677]" name="verifyTooltipAndHeader" class="testCases.VerifyAroundCognizant"/>
+        <method signature="VerifyAllNews.verifySeeAllLink()[pri:1, instance:testCases.VerifyAllNews@402c4085]" name="verifySeeAllLink" class="testCases.VerifyAllNews"/>
+        <method signature="VerifyAllNews.verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@402c4085]" name="verifyNewsHeaders" class="testCases.VerifyAllNews"/>
+        <method signature="VerifyAroundCognizant.verifyNewsDisplayed()[pri:2, instance:testCases.VerifyAroundCognizant@16eb3ea3]" name="verifyNewsDisplayed" class="testCases.VerifyAroundCognizant"/>
+        <method signature="VerifyAllNews.verifyEachNews()[pri:3, instance:testCases.VerifyAllNews@402c4085]" name="verifyEachNews" class="testCases.VerifyAllNews"/>
+        <method signature="VerifyAroundCognizant.verifyTooltipAndHeader()[pri:3, instance:testCases.VerifyAroundCognizant@16eb3ea3]" name="verifyTooltipAndHeader" class="testCases.VerifyAroundCognizant"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="VerifyAllNews.verifySeeAllLink()[pri:1, instance:testCases.VerifyAllNews@16eb3ea3]" name="verifySeeAllLink" class="testCases.VerifyAllNews"/>
-        <method signature="VerifyAroundCognizant.verifyAroundCognizantPresent()[pri:1, instance:testCases.VerifyAroundCognizant@6caf0677]" name="verifyAroundCognizantPresent" class="testCases.VerifyAroundCognizant"/>
-        <method signature="VerifyUserDetails.clickProfile()[pri:1, instance:testCases.VerifyUserDetails@8458f04]" name="clickProfile" class="testCases.VerifyUserDetails"/>
-        <method signature="VerifyAroundCognizant.verifyNewsDisplayed()[pri:2, instance:testCases.VerifyAroundCognizant@6caf0677]" name="verifyNewsDisplayed" class="testCases.VerifyAroundCognizant"/>
+        <method signature="VerifyAllNews.verifySeeAllLink()[pri:1, instance:testCases.VerifyAllNews@402c4085]" name="verifySeeAllLink" class="testCases.VerifyAllNews"/>
+        <method signature="VerifyAroundCognizant.verifyAroundCognizantPresent()[pri:1, instance:testCases.VerifyAroundCognizant@16eb3ea3]" name="verifyAroundCognizantPresent" class="testCases.VerifyAroundCognizant"/>
+        <method signature="VerifyAroundCognizant.verifyNewsDisplayed()[pri:2, instance:testCases.VerifyAroundCognizant@16eb3ea3]" name="verifyNewsDisplayed" class="testCases.VerifyAroundCognizant"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-02-13T16:50:46 IST" name="Test" finished-at="2024-02-13T16:53:29 IST" duration-ms="163639">
-      <class name="testCases.VerifyUserDetails">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.VerifyUserDetails@8458f04]" started-at="2024-02-13T16:50:47 IST" name="setup" finished-at="2024-02-13T16:51:49 IST" duration-ms="61888" status="PASS">
+    <test started-at="2024-03-13T16:07:25 IST" name="Chrometest" finished-at="2024-03-13T16:10:42 IST" duration-ms="196820">
+      <class name="testCases.VerifyAroundCognizant">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.VerifyAroundCognizant@16eb3ea3]" started-at="2024-03-13T16:07:26 IST" name="setup" finished-at="2024-03-13T16:08:08 IST" duration-ms="41613" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,107 +30,60 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="clickProfile()[pri:1, instance:testCases.VerifyUserDetails@8458f04]" started-at="2024-02-13T16:51:49 IST" name="clickProfile" finished-at="2024-02-13T16:51:53 IST" duration-ms="4521" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickProfile -->
-        <test-method signature="verifyDetails()[pri:2, instance:testCases.VerifyUserDetails@8458f04]" started-at="2024-02-13T16:51:53 IST" name="verifyDetails" finished-at="2024-02-13T16:51:59 IST" duration-ms="5208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDetails -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.VerifyUserDetails@8458f04]" started-at="2024-02-13T16:53:29 IST" name="teardown" finished-at="2024-02-13T16:53:29 IST" duration-ms="241" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.VerifyUserDetails -->
-      <class name="testCases.VerifyAroundCognizant">
-        <test-method signature="verifyAroundCognizantPresent()[pri:1, instance:testCases.VerifyAroundCognizant@6caf0677]" started-at="2024-02-13T16:51:59 IST" name="verifyAroundCognizantPresent" finished-at="2024-02-13T16:51:59 IST" duration-ms="403" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAroundCognizantPresent -->
-        <test-method signature="verifyNewsDisplayed()[pri:2, instance:testCases.VerifyAroundCognizant@6caf0677]" started-at="2024-02-13T16:51:59 IST" name="verifyNewsDisplayed" finished-at="2024-02-13T16:52:03 IST" duration-ms="3996" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewsDisplayed -->
-        <test-method signature="verifyTooltipAndHeader()[pri:3, instance:testCases.VerifyAroundCognizant@6caf0677]" started-at="2024-02-13T16:52:03 IST" name="verifyTooltipAndHeader" finished-at="2024-02-13T16:52:35 IST" duration-ms="31697" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTooltipAndHeader -->
-      </class> <!-- testCases.VerifyAroundCognizant -->
-      <class name="testCases.VerifyAllNews">
-        <test-method signature="verifySeeAllLink()[pri:1, instance:testCases.VerifyAllNews@16eb3ea3]" started-at="2024-02-13T16:52:35 IST" name="verifySeeAllLink" finished-at="2024-02-13T16:52:41 IST" duration-ms="5869" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySeeAllLink -->
-        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@16eb3ea3]" started-at="2024-02-13T16:52:41 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-02-13T16:52:43 IST" duration-ms="1821" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Cognizant inaugurates Bhubaneswar center: A new chapter begins!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewsHeaders -->
-        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@16eb3ea3]" started-at="2024-02-13T16:52:43 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-02-13T16:52:43 IST" duration-ms="265" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Cognizant’s five retail trends for 2024]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewsHeaders -->
-        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@16eb3ea3]" started-at="2024-02-13T16:52:43 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-02-13T16:52:43 IST" duration-ms="273" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Beyond the Desk: Kritika Tripathi]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewsHeaders -->
-        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@16eb3ea3]" started-at="2024-02-13T16:52:43 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-02-13T16:52:43 IST" duration-ms="272" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Black History Month: how art shapes culture and society]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewsHeaders -->
-        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@16eb3ea3]" started-at="2024-02-13T16:52:43 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-02-13T16:52:44 IST" duration-ms="237" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[InFocus – Jithin Paul]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewsHeaders -->
-        <test-method signature="verifyEachNews()[pri:3, instance:testCases.VerifyAllNews@16eb3ea3]" started-at="2024-02-13T16:52:44 IST" name="verifyEachNews" finished-at="2024-02-13T16:53:29 IST" duration-ms="45212" status="FAIL">
-          <exception class="java.lang.IndexOutOfBoundsException">
+        <test-method signature="verifyAroundCognizantPresent()[pri:1, instance:testCases.VerifyAroundCognizant@16eb3ea3]" started-at="2024-03-13T16:08:08 IST" name="verifyAroundCognizantPresent" finished-at="2024-03-13T16:08:42 IST" duration-ms="34180" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Index 2 out of bounds for length 0]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class="fontSizeXLarge"]/strong"}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [27fc6641c89e0c67abb8ed9899008317, findElement {using=xpath, value=//span[@class="fontSizeXLarge"]/strong}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65056/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27fc6641c89e0c67abb8ed9899008317]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 0
-at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-at java.base/java.util.Objects.checkIndex(Objects.java:361)
-at java.base/java.util.ArrayList.get(ArrayList.java:427)
-at pageObjects.News.clickNewsHeader(News.java:58)
-at testCases.VerifyAllNews.verifyEachNews(VerifyAllNews.java:64)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class="fontSizeXLarge"]/strong"}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [27fc6641c89e0c67abb8ed9899008317, findElement {using=xpath, value=//span[@class="fontSizeXLarge"]/strong}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65056/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27fc6641c89e0c67abb8ed9899008317
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:470)
+at pageObjects.BasePage.scroll(BasePage.java:21)
+at pageObjects.HomePage.checkTextPresence(HomePage.java:80)
+at testCases.VerifyAroundCognizant.verifyAroundCognizantPresent(VerifyAroundCognizant.java:17)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -163,11 +114,88 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAroundCognizantPresent -->
+        <test-method signature="verifyNewsDisplayed()[pri:2, instance:testCases.VerifyAroundCognizant@16eb3ea3]" started-at="2024-03-13T16:08:42 IST" name="verifyNewsDisplayed" finished-at="2024-03-13T16:09:05 IST" duration-ms="23083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsDisplayed -->
+        <test-method signature="verifyTooltipAndHeader()[pri:3, instance:testCases.VerifyAroundCognizant@16eb3ea3]" started-at="2024-03-13T16:09:05 IST" name="verifyTooltipAndHeader" finished-at="2024-03-13T16:09:37 IST" duration-ms="31364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTooltipAndHeader -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.VerifyAroundCognizant@16eb3ea3]" started-at="2024-03-13T16:10:42 IST" name="teardown" finished-at="2024-03-13T16:10:42 IST" duration-ms="405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.VerifyAroundCognizant -->
+      <class name="testCases.VerifyAllNews">
+        <test-method signature="verifySeeAllLink()[pri:1, instance:testCases.VerifyAllNews@402c4085]" started-at="2024-03-13T16:09:37 IST" name="verifySeeAllLink" finished-at="2024-03-13T16:09:44 IST" duration-ms="7475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySeeAllLink -->
+        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@402c4085]" started-at="2024-03-13T16:09:44 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-03-13T16:09:49 IST" duration-ms="4456" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cognizant Coimbatore hosts 400 college students on International Women’s Day]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsHeaders -->
+        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@402c4085]" started-at="2024-03-13T16:09:49 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-03-13T16:09:49 IST" duration-ms="245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[International Women's Day 2024: #InspireInclusion]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsHeaders -->
+        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@402c4085]" started-at="2024-03-13T16:09:49 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-03-13T16:09:49 IST" duration-ms="205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cognizant elevates Iris Global to Excellence in Technological Innovation and Social Transformation using Pega]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsHeaders -->
+        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@402c4085]" started-at="2024-03-13T16:09:49 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-03-13T16:09:49 IST" duration-ms="257" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Beyond the Desk: Vasantha Lakshmi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsHeaders -->
+        <test-method signature="verifyNewsHeaders(java.lang.String)[pri:2, instance:testCases.VerifyAllNews@402c4085]" started-at="2024-03-13T16:09:49 IST" name="verifyNewsHeaders" data-provider="dp" finished-at="2024-03-13T16:09:50 IST" duration-ms="209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cognizant launches an Advanced Artificial Intelligence Lab]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsHeaders -->
+        <test-method signature="verifyEachNews()[pri:3, instance:testCases.VerifyAllNews@402c4085]" started-at="2024-03-13T16:09:50 IST" name="verifyEachNews" finished-at="2024-03-13T16:10:42 IST" duration-ms="51920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEachNews -->
       </class> <!-- testCases.VerifyAllNews -->
-    </test> <!-- Test -->
+    </test> <!-- Chrometest -->
   </suite> <!-- Suite -->
 </testng-results>

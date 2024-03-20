@@ -1,10 +1,7 @@
 package pageObjects;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.*;
-
-import javax.imageio.ImageIO;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -23,11 +20,12 @@ public class NewsInfoPage extends BasePage{
 	WebElement title=driver.findElement(By.id("title_text"));
 	List<String> titles=new ArrayList<String>();
 	
-	WebElement info=driver.findElement(By.id("fa45f946-463e-428f-a84b-0bbbde09c3ba"));
+	WebElement info=driver.findElement(By.id("spPageCanvasContent"));
 	List<String> arr=new ArrayList<String>();
 	
 	public  void getNewsDetails(int r) throws InterruptedException, IOException {
-		String infoText=info.getText();
+		String infoText;
+		infoText=info.getText().substring(0, 500);
 		String titleText=title.getText();
 		titles.add(titleText);
 		arr.add(infoText);

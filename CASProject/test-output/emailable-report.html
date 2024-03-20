@@ -9,30 +9,55 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">163,639</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Chrometest</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">196,820</td><td>regression, smoke</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.VerifyAllNews</td><td><a href="#m0">verifyEachNews</a></td><td rowspan="1">1707823364188</td><td rowspan="1">45212</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">testCases.VerifyAllNews</td><td><a href="#m1">verifyNewsHeaders</a></td><td rowspan="5">1707823363399</td><td rowspan="5">273</td></tr><tr class="passedeven"><td><a href="#m2">verifyNewsHeaders</a></td></tr><tr class="passedeven"><td><a href="#m3">verifyNewsHeaders</a></td></tr><tr class="passedeven"><td><a href="#m4">verifyNewsHeaders</a></td></tr><tr class="passedeven"><td><a href="#m5">verifyNewsHeaders</a></td></tr><tr class="passedeven"><td><a href="#m6">verifySeeAllLink</a></td><td rowspan="1">1707823355195</td><td rowspan="1">5869</td></tr><tr class="passedodd"><td rowspan="3">testCases.VerifyAroundCognizant</td><td><a href="#m7">verifyAroundCognizantPresent</a></td><td rowspan="1">1707823319082</td><td rowspan="1">403</td></tr><tr class="passedodd"><td><a href="#m8">verifyNewsDisplayed</a></td><td rowspan="1">1707823319492</td><td rowspan="1">3996</td></tr><tr class="passedodd"><td><a href="#m9">verifyTooltipAndHeader</a></td><td rowspan="1">1707823323494</td><td rowspan="1">31697</td></tr><tr class="passedeven"><td rowspan="2">testCases.VerifyUserDetails</td><td><a href="#m10">clickProfile</a></td><td rowspan="1">1707823309286</td><td rowspan="1">4521</td></tr><tr class="passedeven"><td><a href="#m11">verifyDetails</a></td><td rowspan="1">1707823313868</td><td rowspan="1">5208</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrometest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.VerifyAroundCognizant</td><td><a href="#m0">verifyAroundCognizantPresent</a></td><td rowspan="1">1710326288141</td><td rowspan="1">34180</td></tr><tr><th colspan="4">Chrometest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">testCases.VerifyAllNews</td><td><a href="#m1">verifyEachNews</a></td><td rowspan="1">1710326390188</td><td rowspan="1">51920</td></tr><tr class="passedeven"><td><a href="#m2">verifyNewsHeaders</a></td><td rowspan="5">1710326389262</td><td rowspan="5">245</td></tr><tr class="passedeven"><td><a href="#m3">verifyNewsHeaders</a></td></tr><tr class="passedeven"><td><a href="#m4">verifyNewsHeaders</a></td></tr><tr class="passedeven"><td><a href="#m5">verifyNewsHeaders</a></td></tr><tr class="passedeven"><td><a href="#m6">verifyNewsHeaders</a></td></tr><tr class="passedeven"><td><a href="#m7">verifySeeAllLink</a></td><td rowspan="1">1710326377055</td><td rowspan="1">7475</td></tr><tr class="passedodd"><td rowspan="2">testCases.VerifyAroundCognizant</td><td><a href="#m8">verifyNewsDisplayed</a></td><td rowspan="1">1710326322597</td><td rowspan="1">23083</td></tr><tr class="passedodd"><td><a href="#m9">verifyTooltipAndHeader</a></td><td rowspan="1">1710326345684</td><td rowspan="1">31364</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">testCases.VerifyAllNews#verifyEachNews</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-	at java.base/java.util.Objects.checkIndex(Objects.java:361)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at pageObjects.News.clickNewsHeader(News.java:58)
-	at testCases.VerifyAllNews.verifyEachNews(VerifyAllNews.java:64)
+<h2>Chrometest</h2><h3 id="m0">testCases.VerifyAroundCognizant#verifyAroundCognizantPresent</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&quot;fontSizeXLarge&quot;]/strong&quot;}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [27fc6641c89e0c67abb8ed9899008317, findElement {using=xpath, value=//span[@class=&quot;fontSizeXLarge&quot;]/strong}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65056/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 27fc6641c89e0c67abb8ed9899008317
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:470)
+	at pageObjects.BasePage.scroll(BasePage.java:21)
+	at pageObjects.HomePage.checkTextPresence(HomePage.java:80)
+	at testCases.VerifyAroundCognizant.verifyAroundCognizantPresent(VerifyAroundCognizant.java:17)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testCases.VerifyAllNews#verifyNewsHeaders</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Beyond the Desk: Kritika Tripathi</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testCases.VerifyAllNews#verifyNewsHeaders</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Cognizant’s five retail trends for 2024</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testCases.VerifyAllNews#verifyNewsHeaders</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Cognizant inaugurates Bhubaneswar center: A new chapter begins!</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testCases.VerifyAllNews#verifyNewsHeaders</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Black History Month: how art shapes culture and society</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testCases.VerifyAllNews#verifyNewsHeaders</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>InFocus – Jithin Paul</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testCases.VerifyAllNews#verifySeeAllLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">testCases.VerifyAroundCognizant#verifyAroundCognizantPresent</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.VerifyAllNews#verifyEachNews</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testCases.VerifyAllNews#verifyNewsHeaders</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>International Women&apos;s Day 2024: #InspireInclusion</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testCases.VerifyAllNews#verifyNewsHeaders</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Cognizant launches an Advanced Artificial Intelligence Lab</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testCases.VerifyAllNews#verifyNewsHeaders</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Cognizant elevates Iris Global to Excellence in Technological Innovation and Social Transformation using Pega</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testCases.VerifyAllNews#verifyNewsHeaders</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Beyond the Desk: Vasantha Lakshmi</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testCases.VerifyAllNews#verifyNewsHeaders</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Cognizant Coimbatore hosts 400 college students on International Women’s Day</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testCases.VerifyAllNews#verifySeeAllLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m8">testCases.VerifyAroundCognizant#verifyNewsDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m9">testCases.VerifyAroundCognizant#verifyTooltipAndHeader</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">testCases.VerifyUserDetails#clickProfile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">testCases.VerifyUserDetails#verifyDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

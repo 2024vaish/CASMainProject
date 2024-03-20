@@ -3,14 +3,8 @@ package Utilities;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
-//import java.net.URL;
-
-//Extent report 5.x...//version
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
-
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -51,7 +45,7 @@ public class ExtentReportManager implements ITestListener {
 		extent.setSystemInfo("Module", "NewsAroundCognizant");
 		extent.setSystemInfo("Sub Module", "N");
 		//extent.setSystemInfo("User Name", System.getProperty("user.name"));
-		extent.setSystemInfo("User Name", "Vaishnavi");
+		extent.setSystemInfo("User Name", "Karunya");
 		extent.setSystemInfo("Environemnt", "QA");
 		
 		//String os = testContext.getCurrentXmlTest().getParameter("os");
@@ -75,7 +69,13 @@ public class ExtentReportManager implements ITestListener {
 		test = extent.createTest(result.getTestClass().getName());
 		test.assignCategory(result.getMethod().getGroups()); // to display groups in report
 		test.log(Status.PASS,result.getName()+" got successfully executed");
-		
+		try {
+			String imgPath = new BaseClass().captureScreen(result.getName());
+			test.addScreenCaptureFromPath(imgPath);
+			
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
 		
 	}
 
